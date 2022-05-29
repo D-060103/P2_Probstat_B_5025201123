@@ -144,11 +144,10 @@ group_2 <- subset(data, V1=="Kucing Hitam")
 group_3 <- subset(data, V1=="Kucing Putih")
 
 ### B
-bartlett.test(Lenght-V1, data=data)
+  - bartlett.test(Lenght-V1, data=data)
 
 ### C
-qqnorm(group_1$Length)
-qqline(group_1$Length)
+  - model_1 <- lm(data$Length~data$group)
 
 ### D
 Dari nilai yang didapat dapat disimpulkan bahwa nilainya lebih dari 0,05 sehingga tidak ada perbedaan statistika yang signifikan
@@ -165,3 +164,6 @@ setiap perlakuan (kombinasi kaca pelat muka dan suhu operasi)
 d. Lakukan uji Tukey
 e. Gunakan compact letter display untuk menunjukkan perbedaan signifikan
 antara uji Anova dan uji Tukey
+
+### A
+Pertama kita instal package dan data kemudian panggil file GTL.cvs sedangkan untuk visualisasi menggunakan read_cvs dan head(GTL)
