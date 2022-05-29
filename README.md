@@ -106,10 +106,10 @@ Untuk menghitung sampel statistik kita menggunakan tsum.test dan karena ada 2 po
 ![gambar](https://github.com/D-060103/P2_Probstat_B_5025201123/blob/main/Screenshot/3%20d.png)
 
 ### Keputusan
-Keputusan adalah alternatif atas solusi-solusi yang ada yang belum memiliki kepastian. Untuk membuat keputusan bisa dilakukan dengan t.test
+Keputusan adalah alternatif atas solusi-solusi yang ada yang belum memiliki kepastian. Untuk membuat keputusan bisa dilakukan dengan t.test. Dalam hal ini keputusannya adalah menerima H0
 
 ### Kesimpulan
-Kesimpulan yang kita peroleh adalah perbedaan rata-rata yang tidak ada jika dilihat dari uji statistik dan dipengaruhi oleh nilai kritikal
+Kesimpulan yang kita peroleh adalah perbedaan rata-rata yang tidak ada jika dilihat dari uji statistik dan dipengaruhi oleh nilai kritikal. Perbedaan pada mean saham untuk bandung dan bali yang didapatkan adalah 0.
 
 4. Seorang Peneliti sedang meneliti spesies dari kucing di ITS . Dalam penelitiannya
 ia mengumpulkan data tiga spesies kucing yaitu kucing oren, kucing hitam dan
