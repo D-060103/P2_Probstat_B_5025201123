@@ -131,6 +131,28 @@ yang didapatkan apakah satu jenis kucing lebih panjang dari yang lain?
 Jelaskan.
 F. Visualisasikan data dengan ggplot2
 
+### A
+data <- read.table(url(https://rstatisticsandresearch.weebly.com/uploads/1/0/2/6/1026585/onewayanova.txt))
+dim(data)
+attach(data)
+head(data)
+data$V1 <- as.factor(data$V1)
+data$V1 = factor(data$V1, labels = c("Kucing Oren", "Kucing Hitam", "Kucing Putih"))
+class (data)
+group_1 <- subset(data, V1=="Kucing Oren")
+group_2 <- subset(data, V1=="Kucing Hitam")
+group_3 <- subset(data, V1=="Kucing Putih")
+
+### B
+bartlett.test(Lenght-V1, data=data)
+
+### C
+qqnorm(group_1$Length)
+qqline(group_1$Length)
+
+### D
+Dari nilai yang didapat dapat disimpulkan bahwa nilainya lebih dari 0,05 sehingga tidak ada perbedaan statistika yang signifikan
+
 5. Data yang digunakan merupakan hasil eksperimen yang dilakukan untuk
 mengetahui pengaruh suhu operasi (100˚C, 125˚C dan 150˚C) dan tiga jenis kaca
 pelat muka (A, B dan C) pada keluaran cahaya tabung osiloskop. Percobaan
